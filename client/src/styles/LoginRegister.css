@@ -1,0 +1,118 @@
+/* General Styles */
+<<<<<<< HEAD
+::-moz-selection {
+  /* Code for Firefox */
+  color: rgb(218, 218, 218);
+  background: rgb(3, 3, 3);
+}
+
+::selection {
+  color: rgb(218, 218, 218);
+  background: rgb(3, 3, 3);
+}
+=======
+>>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: whitesmoke;
+}
+
+/* Form Container */
+.formContainer {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.formWrapper {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 24px;
+  padding: 30px;
+  width: 40vw;
+  max-width: 480px;
+  text-align: center;
+  justify-content: center;
+}
+
+.title {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  color: #3d3d3d;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.textField {
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+<<<<<<< HEAD
+.or {
+=======
+.or{
+>>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
+  font-size: larger;
+  font-weight: 700;
+}
+
+input {
+  /* Added selector for input fields */
+  width: 500px; /* Make input fields take full width */
+  padding: 12px; /* Add padding for better appearance */
+  border-radius: 8px; /* Add border-radius for rounded corners */
+  border: 1px solid #ccc; /* Add border for better visibility */
+}
+
+.forgotPassword {
+  color: #000;
+  font-size: 0.9rem;
+  text-align: right;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.btn-bllack {
+  background-color: #363636;
+  color: #fff;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 15px;
+  text-transform: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-google {
+  border-color: #000;
+  color: #000;
+  text-transform: none;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formFooter {
+  color: #000;
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+.sizedbox {
+  height: 20px;
+}
