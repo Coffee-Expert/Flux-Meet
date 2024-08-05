@@ -138,6 +138,35 @@ const Home = () => {
                 </p>
               </div>
             </section>
+            <hr></hr>
+            <section className="meet-btn-cnt">
+              <div className="create-meet">
+                <input
+                  type="text"
+                  placeholder="Name your meet..."
+                  onChange={(e) => setRoomName(e.target.value)}
+                />
+                <button
+                  data-bs-toggle="modal"
+                  data-bs-target="#createMeetModal"
+                  className="register-button"
+                >
+                  <RiVideoAddFill /> New meet
+                </button>
+              </div>
+              <p className="or">or</p>
+              <div className="join-meet">
+                <input
+                  type="text"
+                  placeholder="Enter code..."
+                  onChange={(e) => setJoinRoomId(e.target.value)}
+                />
+                <button className="login-button" onClick={handleJoinRoom}>
+                  <CgEnter /> Join Meet
+                </button>
+              </div>
+              <span className="error-message">{joinRoomError}</span>
+            </section>
 
             <div
               className="modal fade"
@@ -228,34 +257,7 @@ const Home = () => {
           </>
         )}
       </main>
-      <section className="meet-btn-cnt">
-        <div className="create-meet">
-          <input
-            type="text"
-            placeholder="Name your meet..."
-            onChange={(e) => setRoomName(e.target.value)}
-          />
-          <button
-            data-bs-toggle="modal"
-            data-bs-target="#createMeetModal"
-            className="register-button"
-          >
-            <RiVideoAddFill /> New meet
-          </button>
-        </div>
-        <p className="or">or</p>
-        <div className="join-meet">
-          <input
-            type="text"
-            placeholder="Enter code..."
-            onChange={(e) => setJoinRoomId(e.target.value)}
-          />
-          <button className="login-button" onClick={handleJoinRoom}>
-            <CgEnter /> Join Meet
-          </button>
-        </div>
-        <span className="error-message">{joinRoomError}</span>
-      </section>
+
       <section className="about-app">
         <div className="box">
           <div className="box-inner">

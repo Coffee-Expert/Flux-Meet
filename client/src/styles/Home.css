@@ -53,6 +53,8 @@ a {
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
+  gap: 3rem;
+  font-size: 2rem;
 }
 
 .register-button,
@@ -90,7 +92,7 @@ a {
   flex: 1;
   padding: 2rem;
   display: flex;
-  flex-direction: start;
+  flex-direction: column;
   align-items: center;
   border-radius: 30px;
 }
@@ -201,7 +203,9 @@ a {
   align-items: center;
   padding: 2rem;
 }
-
+input {
+  width: auto !important;
+}
 .box {
   margin-bottom: 2rem;
   border-radius: 30px;
