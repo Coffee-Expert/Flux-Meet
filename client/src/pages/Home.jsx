@@ -109,7 +109,7 @@ const Home = () => {
             <div className="intro-text">
               <h2>Seamless Video Conferencing for Your Team</h2>
               <p>
-                MeetUp is a powerful <strong>MERN stack-based</strong> video
+                Flux Meet is a powerful <strong>MERN stack-based</strong> video
                 conferencing app that brings your team together, no matter where
                 they are. Elevate your virtual communication and connect without
                 boundaries today!

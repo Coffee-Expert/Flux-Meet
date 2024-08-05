@@ -1,7 +1,7 @@
 /* General Styles */
-<<<<<<< HEAD
 
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: rgb(218, 218, 218);
   background: rgb(3, 3, 3);
 }
@@ -11,8 +11,6 @@
   background: rgb(3, 3, 3);
 }
 
-=======
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -289,13 +287,11 @@ h2 {
   display: flex;
   gap: 0.5rem;
 }
-<<<<<<< HEAD
+
 a {
   color: #000000 !important;
 }
-=======
 
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
 .footer-right {
   text-align: right;
 }
@@ -503,15 +499,9 @@ button {
 
 button:hover,
 button:focus {
-<<<<<<< HEAD
   color: rgb(0, 0, 0) !important;
   background: transparent !important;
   border-color: white !important;
-=======
-  color: rgb(205, 205, 205);
-  background: transparent;
-  border-color: currentColor;
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
 }
 
 button:active {

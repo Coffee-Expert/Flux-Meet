@@ -11,7 +11,6 @@ import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-<<<<<<< HEAD
   <React.StrictMode>
     <BrowserRouter>
       <AuthContextProvider>
@@ -23,17 +22,6 @@ root.render(
       </AuthContextProvider>
     </BrowserRouter>
   </React.StrictMode>
-=======
-  // <React.StrictMode>
-  <BrowserRouter>
-    <AuthContextProvider>
-      <SocketContextProvider>
-        <App />
-      </SocketContextProvider>
-    </AuthContextProvider>
-  </BrowserRouter>
-  // </React.StrictMode>
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
 );
 
 // If you want to start measuring performance in your app, pass a function

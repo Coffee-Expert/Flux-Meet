@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "../styles/LoginRegister.css";
-<<<<<<< HEAD
+
 import { Link } from "react-router-dom";
-=======
-import { Link, Navigate } from "react-router-dom";
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
 import { TextField, Button, Typography, Box, Container } from "@mui/material";

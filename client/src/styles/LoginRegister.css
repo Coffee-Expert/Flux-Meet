@@ -1,5 +1,5 @@
 /* General Styles */
-<<<<<<< HEAD
+
 ::-moz-selection {
   /* Code for Firefox */
   color: rgb(218, 218, 218);
@@ -10,8 +10,7 @@
   color: rgb(218, 218, 218);
   background: rgb(3, 3, 3);
 }
-=======
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -62,11 +61,7 @@ body {
   width: 100%;
 }
 
-<<<<<<< HEAD
 .or {
-=======
-.or{
->>>>>>> 414a2c56b023d9112bd73108d2b1ef2a4ffa8678
   font-size: larger;
   font-weight: 700;
 }
