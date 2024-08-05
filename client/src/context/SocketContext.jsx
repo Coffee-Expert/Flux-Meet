@@ -7,7 +7,7 @@ import { useClient, useMicrophoneAndCameraTracks } from '../AgoraSetup'
  
 export const SocketContext = createContext();
 
-const WS = 'http://localhost:6001';
+const WS = 'https://flux-meet-api.vercel.app';
 
 const socket = socketIoClient(WS);
 
