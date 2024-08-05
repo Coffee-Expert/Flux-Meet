@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(
   cors({
-    origin: ["https://deploy-mern-1whq.vercel.app"],
+    origin: [""],
     methods: ["POST", "GET"],
     credentials: true,
   })
