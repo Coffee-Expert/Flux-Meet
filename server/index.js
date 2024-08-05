@@ -18,7 +18,7 @@ app.use(express.json());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(
   cors({
-    origin: [""],
+    origin: ["https://flux-meetings.vercel.app"],
     methods: ["POST", "GET"],
     credentials: true,
   })
