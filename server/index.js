@@ -39,9 +39,11 @@ io.on("connection", (socket) => {
   });
 });
 const PORT = 6001;
+const uri =
+  "mongodb+srv://abhishekevingomes:nnnn1234@flux-meet.lpucsqu.mongodb.net/?retryWrites=true&w=majority&appName=flux-meet";
+
 mongoose
-  .connect('mongodb://localhost:27017/chime-in', {
-  })
+  .connect(uri, {})
   .then(() => {
     server.listen(PORT, () => {
       console.log(`Running @ ${PORT}`);
