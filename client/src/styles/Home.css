@@ -1,7 +1,8 @@
 /* General Styles */
 h1 {
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: rgb(28, 0, 65);
+  color: rgb(0, 0, 0);
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  -webkit-text-stroke: 3px rgb(106, 105, 0);
 }
 
 ::-moz-selection {
