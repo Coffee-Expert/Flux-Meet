@@ -1,4 +1,8 @@
 /* General Styles */
+h1 {
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: rgb(28, 0, 65);
+}
 
 ::-moz-selection {
   /* Code for Firefox */
