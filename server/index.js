@@ -7,7 +7,6 @@ import { Server } from "socket.io";
 import http from "http";
 
 import roomHandler from "./socket/roomHandler.js";
-
 import authRoutes from "./routes/auth.js";
 
 dotenv.config();
@@ -16,10 +15,14 @@ const app = express();
 
 app.use(express.json());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
+
+// Express CORS configuration
+const allowedOrigins = ["https://flux-meetings.vercel.app"];
+
 app.use(
   cors({
-    origin: ["https://flux-meetings.vercel.app"],
-    methods: ["POST", "GET"],
+    origin: allowedOrigins,
+    methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
@@ -28,10 +31,13 @@ app.use("/auth", authRoutes);
 
 const server = http.createServer(app);
 
+// Socket.io CORS configuration
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: allowedOrigins,
     methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true,
   },
 });
 
@@ -48,9 +54,9 @@ io.on("connection", (socket) => {
 app.get("/", (req, res) => {
   res.json("Hello World!!");
 });
-const PORT = 6001;
-const uri =
-  "mongodb+srv://abhishekevingomes:nnnn1234@flux-meet.lpucsqu.mongodb.net/?retryWrites=true&w=majority&appName=flux-meet";
+
+const PORT = process.env.PORT || 6001;
+const uri = process.env.MONGODB_URI || "your_mongodb_uri_here";
 
 mongoose
   .connect(uri, {})
