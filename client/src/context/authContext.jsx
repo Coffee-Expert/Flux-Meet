@@ -11,7 +11,7 @@ export const AuthContextProvider = ({ children }) => {
   const login = async (inputs) => {
     try {
       await axios
-        .post("https://flux-meet-api.vercel.app/auth/login", inputs)
+        .post("https://flux-meetings.vercel.app/auth/login", inputs)
         .then(async (res) => {
           await localStorage.setItem("userToken", res.data.token);
           await localStorage.setItem("userId", res.data.user._id);
@@ -30,7 +30,7 @@ export const AuthContextProvider = ({ children }) => {
   const register = async (inputs) => {
     try {
       await axios
-        .post("https://flux-meet-api.vercel.app/auth/register", inputs)
+        .post("https://flux-meetings.vercel.app/auth/register", inputs)
         .then((res) => {
           localStorage.setItem("userToken", res.data.token);
           localStorage.setItem("userId", res.data.user._id);
