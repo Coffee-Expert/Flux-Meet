@@ -97,10 +97,16 @@ Flux Meet is a powerful video conferencing application designed to facilitate se
 4. Push to the branch (`git push origin feature-branch`)
 5. Open a Pull Request
 
-<h2>📬 Contact</h2>
-Author: Abhishek Kevin Gomes <br></br>
-
+### 📬 Contact
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Coffee-Expert)
+
+
+Author: Abhishek Kevin Gomes 
+
+Created in SmartInternz Internship.
+
+
+
 
 If you want to contact me, you can reach me through below handles.
 
