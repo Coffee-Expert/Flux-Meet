@@ -2,9 +2,9 @@
 <div align="center">
     <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react" />
     <img src="https://img.shields.io/badge/-Node_JS-black?style=for-the-badge&logoColor=white&logo=node.js&color=339933" alt="nodejs" />
+    <img src="https://img.shields.io/badge/-Socket.IO-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="socketio" />
     <img src="https://img.shields.io/badge/-MongoDB-black?style=for-the-badge&logoColor=white&logo=mongodb&color=47A248" alt="mongodb" />
     <img src="https://img.shields.io/badge/-Agora-black?style=for-the-badge&logoColor=white&logo=agora&color=009688" alt="agora" />
-    <img src="https://img.shields.io/badge/-Socket.IO-black?style=for-the-badge&logoColor=white&logo=socket.io&color=010101" alt="socketio" />
     <img src="https://img.shields.io/badge/-Express-black?style=for-the-badge&logoColor=white&logo=express&color=000000" alt="express" />
     <img src="https://img.shields.io/badge/-CORS-black?style=for-the-badge&logoColor=white&color=00BCD4" alt="cors" />
     <img src="https://img.shields.io/badge/-Figma-black?style=for-the-badge&logoColor=white&logo=figma&color=F24E1E" alt="figma" />
