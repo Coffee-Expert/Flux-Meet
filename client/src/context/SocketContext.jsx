@@ -1,20 +1,15 @@
-import React, { createContext, useEffect, useState} from 'react';
-import { useNavigate } from 'react-router-dom';
-import socketIoClient from 'socket.io-client';
-import { useClient, useMicrophoneAndCameraTracks } from '../AgoraSetup'
+import React, { createContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
+import socketIoClient from "socket.io-client";
+import { useClient, useMicrophoneAndCameraTracks } from "../AgoraSetup";
 
-
- 
 export const SocketContext = createContext();
 
-const WS = 'https://flux-meetings.vercel.app/';
+const WS = "https://flux-meetings.vercel.app/";
 
 const socket = socketIoClient(WS);
 
-
-
-export const SocketContextProvider =  ({children}) => {
-  
+export const SocketContextProvider = ({ children }) => {
   const navigate = useNavigate();
   const userId = localStorage.getItem("userId");
 
@@ -24,44 +19,58 @@ export const SocketContextProvider =  ({children}) => {
   const client = useClient();
   const { ready, tracks } = useMicrophoneAndCameraTracks();
 
-
   const [screenTrack, setScreenTrack] = useState(null);
 
   const [participants, setParticipants] = useState({});
 
-
   const [myMeets, setMyMeets] = useState([]);
-
 
   const [participantsListOpen, setParticipantsListOpen] = useState(false);
   const [chatsContainerOpen, setChatsContainerOpen] = useState(false);
 
+  const [newMeetType, setNewMeetType] = useState("");
 
-  const [newMeetType, setNewMeetType] = useState('');
-  
-  useEffect(()=>{
-
-    socket.on('room-created', ({roomId, meetType}) =>{
-
-      if (meetType === 'instant'){
-
+  useEffect(() => {
+    socket.on("room-created", ({ roomId, meetType }) => {
+      if (meetType === "instant") {
         navigate(`/meet/${roomId}`);
-
-      }else if(meetType === 'scheduled'){
+      } else if (meetType === "scheduled") {
         navigate(`/profile`);
       }
-      
     });
-
   }, [socket]);
 
-
-  
   return (
-    <SocketContext.Provider  value={{myMeets, setMyMeets, newMeetType, setNewMeetType, participants, setParticipants, userId, socket, inCall, setInCall, ready, tracks, screenTrack, setScreenTrack, client, users, setUsers, start, setStart, participantsListOpen, setParticipantsListOpen, chatsContainerOpen, setChatsContainerOpen}} >{children}</SocketContext.Provider>
-  )
-}
+    <SocketContext.Provider
+      value={{
+        myMeets,
+        setMyMeets,
+        newMeetType,
+        setNewMeetType,
+        participants,
+        setParticipants,
+        userId,
+        socket,
+        inCall,
+        setInCall,
+        ready,
+        tracks,
+        screenTrack,
+        setScreenTrack,
+        client,
+        users,
+        setUsers,
+        start,
+        setStart,
+        participantsListOpen,
+        setParticipantsListOpen,
+        chatsContainerOpen,
+        setChatsContainerOpen,
+      }}
+    >
+      {children}
+    </SocketContext.Provider>
+  );
+};
 
-
-
-// export default socketContext
+export default socketContext;
