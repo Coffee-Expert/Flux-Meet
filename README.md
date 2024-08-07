@@ -13,6 +13,7 @@
 <h3 align="center">Flux Meet: Real-Time Video Conferencing App</h3>
 
 ## 🤖 Introduction
+This is Project Based work which has been done under the Internship of Smartbridge.
 
 Flux Meet is a powerful video conferencing application designed to facilitate seamless and real-time communication. Built with the MERN stack, Agora RTC, and Socket.IO, Flux Meet ensures reliable and high-quality video calls, making it an ideal solution for both personal and professional use. This project is created as an internship project at SmartInternz.
 
