@@ -7,7 +7,6 @@ import ProfileCard from "../components/ProfileCard";
 import MeetData from "../components/MeetData";
 import { SocketContext } from "../context/SocketContext";
 
-
 const Profile = () => {
   const userName = localStorage.getItem("userName");
   const userId = localStorage.getItem("userId");
@@ -23,7 +22,7 @@ const Profile = () => {
     socket.on("meets-fetched", async ({ myMeets }) => {
       console.log("myMeetsss", myMeets);
       setMyMeets(myMeets);
-
+      console.log(myMeets);
     });
   }, [socket]);
 

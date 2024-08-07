@@ -86,12 +86,13 @@ const MeetRoom = () => {
 
       try {
         await client.join(config.appId, name, config.token, userId);
+        if (tracks) {
+          await client.publish([tracks[0], tracks[1]]);
+          setStart(true);
+        }
       } catch (error) {
-        console.log("error");
+        console.error("AgoraRTCError: Failed to join or publish", error);
       }
-
-      if (tracks) await client.publish([tracks[0], tracks[1]]);
-      setStart(true);
     };
 
     if (ready && tracks) {

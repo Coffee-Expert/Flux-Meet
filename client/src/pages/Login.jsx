@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "../styles/LoginRegister.css";
-
 import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";

@@ -1,9 +1,4 @@
 /* General Styles */
-h1 {
-  color: rgb(0, 0, 0);
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-  -webkit-text-stroke: 3px rgb(106, 105, 0);
-}
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -31,7 +26,7 @@ a {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background: #f7f7f7;
+  background: #e4fff3;
 }
 
 .home-header {
@@ -39,7 +34,14 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background: #fff;
+
+  backdrop-filter: blur(4px);
+  width: 100%;
+  background: #81d2fe3e;
+  position: fixed;
+  top: 0;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  z-index: 20;
 }
 
 .home-logo h2 {
@@ -58,8 +60,6 @@ a {
   padding: 20px;
   display: flex;
   justify-content: space-evenly;
-  gap: 3rem;
-  font-size: 2rem;
 }
 
 .register-button,
@@ -72,7 +72,7 @@ a {
 }
 
 .register-button {
-  background: #fff !important;
+  background: transparent !important;
   color: #333 !important;
   border: 1px solid #333 !important;
 }
@@ -97,13 +97,16 @@ a {
   flex: 1;
   padding: 2rem;
   display: flex;
-  flex-direction: column;
+  flex-direction: start;
   align-items: center;
   border-radius: 30px;
 }
 
 .home-intro {
   display: flex;
+  height: 40vh;
+
+  flex: 1;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -113,20 +116,27 @@ a {
 }
 
 .intro-text {
-  flex: 1;
+  width: 50% !important;
 }
 
 .intro-text h2 {
   margin: 0 0 1rem;
   font-weight: 700;
   font-size: 4rem;
-  color: #333;
+  color: #000b66;
+}
+.current-date-time {
+  font-size: 1.5rem;
+  position: absolute;
+  bottom: 10px;
+  font-weight: 600;
+  color: #5b5a5a;
 }
 .title {
   justify-content: center;
   margin: 0 0 1rem;
-  margin-top: 2rem;
-  font-weight: 700;
+  margin-top: 2rem !important;
+  font-weight: 700 !important;
   font-size: 3rem;
   color: #333;
 }
@@ -208,9 +218,7 @@ a {
   align-items: center;
   padding: 2rem;
 }
-input {
-  width: auto !important;
-}
+
 .box {
   margin-bottom: 2rem;
   border-radius: 30px;
@@ -224,7 +232,7 @@ input {
   flex-direction: column;
   padding: 1rem;
   border-radius: 30px;
-  background: #f9f9f9;
+  background: #fef8f8;
 }
 
 .box-front,
@@ -296,11 +304,9 @@ h2 {
   display: flex;
   gap: 0.5rem;
 }
-
 a {
   color: #000000 !important;
 }
-
 .footer-right {
   text-align: right;
 }
@@ -419,7 +425,7 @@ figure,
   position: absolute;
   top: 0;
   left: 0;
-
+  background-color: #004a42;
   width: 100%;
   height: 100%;
 }
@@ -454,7 +460,7 @@ figcaption {
 
 /* .img-bg */
 .img-bg {
-  background: grey;
+  background: #0bb981;
 }
 
 .card-front .img-bg {
@@ -645,6 +651,7 @@ button:focus + .design-container {
 }
 .ccard {
   width: 350px;
+  background-color: #d4fffb;
   height: 400px;
   border-radius: 20px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
