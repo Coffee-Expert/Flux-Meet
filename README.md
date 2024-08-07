@@ -1,3 +1,4 @@
+![flux_banner](https://github.com/user-attachments/assets/9e91db05-5b64-479b-8337-8c66e94f76f8)
 <div align="center">
     <img src="https://img.shields.io/badge/-React-black?style=for-the-badge&logoColor=white&logo=react&color=61DAFB" alt="react" />
     <img src="https://img.shields.io/badge/-Node_JS-black?style=for-the-badge&logoColor=white&logo=node.js&color=339933" alt="nodejs" />
