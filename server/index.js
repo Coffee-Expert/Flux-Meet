@@ -22,7 +22,7 @@ const allowedOrigins = ["https://flux-meetings.vercel.app"];
 app.use(
   cors({
     origin: allowedOrigins,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "TRACE"],
     credentials: true,
   })
 );
@@ -34,7 +34,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
     origin: allowedOrigins,
-    methods: ["GET", "POST", "PUT", "DELETE"],
+    methods: ["GET", "POST", "PUT", "DELETE", "TRACE"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
   },
