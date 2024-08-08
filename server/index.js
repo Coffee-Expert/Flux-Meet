@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 app.use(bodyParser.json({ limit: "30mb", extended: true }));
 // Express CORS configuration
-const allowedOrigins = ["https://flux-meetings.vercel.app"];
+const allowedOrigins = ["https://flux-meetings.vercel.app:6001"];
 
 app.use(
   cors({
