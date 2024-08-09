@@ -21,7 +21,7 @@ const allowedOrigins = ["https://flux-meetings.vercel.app"];
 
 app.use(
   cors({
-    origin: allowedOrigins,
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
@@ -33,9 +33,9 @@ const server = http.createServer(app);
 // Socket.io CORS configuration
 const io = new Server(server, {
   cors: {
-    origin: allowedOrigins,
+    origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization"],
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"], 
     credentials: true,
   },
 });

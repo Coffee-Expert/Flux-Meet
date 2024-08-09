@@ -22,7 +22,7 @@ export const verifyToken = async (req, res, next) => {
   }
 
   if (!token) {
-    return res.status(403);
     throw new Error("Access Denied");
+    return res.status(403);
   }
 };
