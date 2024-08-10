@@ -11,10 +11,6 @@
       "src": "/auth/(.*)",
       "dest": "routes/auth.js"
     },
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
-    },
 
     { "src": "/(.*)", "dest": "/" }
   ]
