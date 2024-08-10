@@ -26,7 +26,7 @@ app.use(
     credentials: true,
   })
 );
-app.use("/auth", authRoutes);
+app.use("/api/auth", authRoutes);
 
 const server = http.createServer(app);
 
@@ -35,7 +35,7 @@ const io = new Server(server, {
   cors: {
     origin: "*",
     methods: ["GET", "POST", "PUT", "DELETE"],
-    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"], 
+    allowedHeaders: ["Content-Type", "Authorization", "X-Requested-With"],
     credentials: true,
   },
 });
@@ -49,8 +49,8 @@ io.on("connection", (socket) => {
   });
 });
 
-app.get("/", (req, res) => {
-  res.json("Hello World!!");
+app.get("/api/", (req, res) => {
+  res.json("Hello World!! at /api/ ");
 });
 const PORT = 6001;
 const uri =
