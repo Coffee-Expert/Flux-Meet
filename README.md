@@ -21,7 +21,8 @@ Flux Meet is a powerful video conferencing application designed to facilitate se
 
 
 https://github.com/user-attachments/assets/d9843f9c-b10b-45ac-be94-85147a4f6fd7
-
+## Project Report 
+[SI-3921-1723037415.pdf](https://github.com/user-attachments/files/17002999/SI-3921-1723037415.pdf)
 
 
 ## ⚙️ Tech Stack
